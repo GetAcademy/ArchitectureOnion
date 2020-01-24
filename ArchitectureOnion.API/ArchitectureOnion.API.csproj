@@ -4,5 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArchitectureOnion.Logic\ArchitectureOnion.Logic.csproj" />
+  </ItemGroup>
+
 
 </Project>

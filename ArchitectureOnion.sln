@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.API", "Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.Logic", "ArchitectureOnion.Logic\ArchitectureOnion.Logic.csproj", "{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.UnitTest", "ArchitectureOnion.UnitTest\ArchitectureOnion.UnitTest.csproj", "{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

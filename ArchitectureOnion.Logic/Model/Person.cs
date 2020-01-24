@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ArchitectureNTier.Logic.Model
+namespace ArchitectureOnion.Logic.Model
 {
     public class Person
     {
