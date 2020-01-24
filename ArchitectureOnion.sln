@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.API", "ArchitectureOnion.API\ArchitectureOnion.API.csproj", "{99CEBF89-D7AD-47CD-A3D9-733134F33535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.API", "ArchitectureOnion.API\ArchitectureOnion.API.csproj", "{99CEBF89-D7AD-47CD-A3D9-733134F33535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.Logic", "ArchitectureOnion.Logic\ArchitectureOnion.Logic.csproj", "{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.Logic", "ArchitectureOnion.Logic\ArchitectureOnion.Logic.csproj", "{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.UnitTest", "ArchitectureOnion.UnitTest\ArchitectureOnion.UnitTest.csproj", "{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.UnitTest", "ArchitectureOnion.UnitTest\ArchitectureOnion.UnitTest.csproj", "{F3484D9F-C52B-4DD2-AF86-D77878DA21C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0578BB1C-3AC7-4ACA-8B12-10CDB82A2936}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFFC13B0-4F62-40AA-B704-C26D7CBFA579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3484D9F-C52B-4DD2-AF86-D77878DA21C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3484D9F-C52B-4DD2-AF86-D77878DA21C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3484D9F-C52B-4DD2-AF86-D77878DA21C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3484D9F-C52B-4DD2-AF86-D77878DA21C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
