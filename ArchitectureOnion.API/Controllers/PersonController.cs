@@ -14,9 +14,9 @@ namespace ArchitectureOnion.API.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
-        private PersonService _personService;
+        private readonly IPersonService _personService;
 
-        public PersonController(PersonService personService)
+        public PersonController(IPersonService personService)
         {
             _personService = personService;
         }
