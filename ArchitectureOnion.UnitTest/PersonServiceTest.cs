@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ArchitectureOnion.Logic;
 using ArchitectureOnion.Logic.Interface;
@@ -9,11 +10,6 @@ namespace ArchitectureOnion.UnitTest
 {
     public class PersonServiceTest
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public async Task TestFather()
         {
@@ -49,7 +45,6 @@ namespace ArchitectureOnion.UnitTest
                 {
                     Id = 1,
                     FirstName = "Dummy Person",
-                    Father = new Person() { Id = 2 }
                 });
             mock.Setup(obj => obj.ReadChildren(1))
                 .ReturnsAsync(new[]{
