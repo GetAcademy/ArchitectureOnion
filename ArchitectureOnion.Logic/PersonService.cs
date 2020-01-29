@@ -5,7 +5,7 @@ using ArchitectureOnion.Logic.Model;
 
 namespace ArchitectureOnion.Logic
 {
-    public class PersonService
+    public class PersonService : IPersonService
     {
         private readonly IPersonRepository _personRepository;
 
