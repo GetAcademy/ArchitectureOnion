@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ArchitectureOnion.DataAccess\ArchitectureOnion.DataAccess.csproj" />
     <ProjectReference Include="..\ArchitectureOnion.Logic\ArchitectureOnion.Logic.csproj" />
   </ItemGroup>
 

@@ -13,6 +13,29 @@ namespace ArchitectureOnion.Logic.Model
         public Person Father { get; set; }
         public Person Mother { get; set; }
 
-        public Person[] Children { get; set; }
+        public Person[] Children { get; set; } = new Person[0];
+
+        public Person()
+        {
+        }
+
+        public Person(int id)
+        {
+            Id = id;
+        }
+        public Person(int id, string firstName, string lastName, DateTime? birthDate, DateTime? deathDate, Person father, Person mother, Person[] children)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDate = birthDate;
+            DeathDate = deathDate;
+            Father = father;
+            Mother = mother;
+            if (children != null)
+            {
+                Children = children;
+            }
+        }
     }
 }
