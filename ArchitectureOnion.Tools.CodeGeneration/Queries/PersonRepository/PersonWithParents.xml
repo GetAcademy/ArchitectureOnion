@@ -1,0 +1,21 @@
+﻿<Query>
+  <Parameters>
+    <Parameter Name="Id" CSType="int"/>
+  </Parameters>
+  <SQL>
+    SELECT p.Id
+          ,p.FirstName
+          ,p.LastName
+          ,p.BirthDate
+          ,p.DeathDate
+	      ,f.Id FatherId
+	      ,f.FirstName + ' ' + f.LastName as FatherName
+	      ,m.Id MotherId
+	      ,m.FirstName + ' ' + f.LastName as MotherName
+      FROM Person p
+      JOIN Person f ON p.Father = f.Id
+      JOIN Person m ON p.Mother = m.Id
+      WHERE p.Id = @Id
+    </SQL>
+  </Query>
+  

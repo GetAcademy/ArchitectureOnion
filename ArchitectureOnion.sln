@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.Logic", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.UnitTest", "ArchitectureOnion.UnitTest\ArchitectureOnion.UnitTest.csproj", "{F3484D9F-C52B-4DD2-AF86-D77878DA21C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.DataAccess", "ArchitectureOnion.DataAccess\ArchitectureOnion.DataAccess.csproj", "{38BD3347-D344-41D7-ABE6-8BC95F4E9F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureOnion.DataAccess", "ArchitectureOnion.DataAccess\ArchitectureOnion.DataAccess.csproj", "{38BD3347-D344-41D7-ABE6-8BC95F4E9F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureOnion.Tools.CodeGeneration", "ArchitectureOnion.Tools.CodeGeneration\ArchitectureOnion.Tools.CodeGeneration.csproj", "{DA88F4B0-F714-4251-97B4-442627F3F3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{38BD3347-D344-41D7-ABE6-8BC95F4E9F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38BD3347-D344-41D7-ABE6-8BC95F4E9F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38BD3347-D344-41D7-ABE6-8BC95F4E9F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA88F4B0-F714-4251-97B4-442627F3F3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA88F4B0-F714-4251-97B4-442627F3F3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA88F4B0-F714-4251-97B4-442627F3F3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA88F4B0-F714-4251-97B4-442627F3F3CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

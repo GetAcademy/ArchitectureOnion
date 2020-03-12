@@ -13,4 +13,8 @@
     <ProjectReference Include="..\ArchitectureOnion.Logic\ArchitectureOnion.Logic.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="GeneratedQueries\" />
+  </ItemGroup>
+
 </Project>
