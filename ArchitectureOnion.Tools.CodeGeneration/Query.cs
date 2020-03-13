@@ -24,12 +24,13 @@ namespace ArchitectureOnion.Tools.CodeGeneration {
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
     public partial class Query {
         
-        private QueryParameters parametersField;
+        private QueryParameter[] parametersField;
         
         private string sQLField;
         
         /// <remarks/>
-        public QueryParameters Parameters {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Parameter", IsNullable=false)]
+        public QueryParameter[] Parameters {
             get {
                 return this.parametersField;
             }
@@ -55,28 +56,7 @@ namespace ArchitectureOnion.Tools.CodeGeneration {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class QueryParameters {
-        
-        private QueryParametersParameter parameterField;
-        
-        /// <remarks/>
-        public QueryParametersParameter Parameter {
-            get {
-                return this.parameterField;
-            }
-            set {
-                this.parameterField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true)]
-    public partial class QueryParametersParameter {
+    public partial class QueryParameter {
         
         private string nameField;
         

@@ -1,1 +1,0 @@
-﻿xsd /c PersonWithParents.xsd /n:ArchitectureOnion.Tools.CodeGeneration

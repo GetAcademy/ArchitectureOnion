@@ -1,0 +1,1 @@
+﻿xsd /c Query.xsd /n:ArchitectureOnion.Tools.CodeGeneration

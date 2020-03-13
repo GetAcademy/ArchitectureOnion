@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.IO;
 using System.Text;
+using System.Text.Json.Serialization;
+using System.Xml;
+using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace ArchitectureOnion.Tools.CodeGeneration
 {
@@ -35,7 +40,20 @@ namespace ArchitectureOnion.Tools.CodeGeneration
         private static void GenerateQueryMethod(StringBuilder code, string file)
         {
             var content = File.ReadAllText(file);
-            //code.AppendLine(readAllText);
+            var serializer = new XmlSerializer(typeof(Query));
+            var query = (Query)serializer.Deserialize(new StringReader(content));
+            using var conn = new SqlConnection(ConnStr);
+            conn.Open();
+            var command = conn.CreateCommand();
+            command.CommandText = query.SQL;
+            foreach (var p in query.Parameters.Parameter)
+            {
+                command.Parameters.AddWithValue(p.Name)
+
+
+            }
+            var reader = command.ExecuteReader();
+            var schemaTable = reader.GetSchemaTable();
         }
 
         private static string GetClassName(string directory)
