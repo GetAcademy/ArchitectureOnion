@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.IO;
 using System.Text;
@@ -27,17 +28,19 @@ namespace ArchitectureOnion.Tools.CodeGeneration
         private static void GenerateRepositoryClass(string directory)
         {
             var className = GetClassName(directory);
-            var code = new StringBuilder();
-            code.AppendLine("public partial class " + className + " { ");
+            var repositoryCode = new StringBuilder();
+            var typesCode = new StringBuilder();
+            repositoryCode.AppendLine("public partial class " + className + " { ");
             var files = Directory.GetFileSystemEntries(directory);
             foreach (var file in files)
             {
-                GenerateQueryMethod(code, file);
+                GenerateQueryMethod(repositoryCode, typesCode, file);
             }
-            code.AppendLine("}");
+            repositoryCode.AppendLine("}");
         }
 
-        private static void GenerateQueryMethod(StringBuilder code, string file)
+        private static void GenerateQueryMethod(StringBuilder repositoryCode, 
+            StringBuilder typesCode, string file)
         {
             var content = File.ReadAllText(file);
             var serializer = new XmlSerializer(typeof(Query));
@@ -46,14 +49,18 @@ namespace ArchitectureOnion.Tools.CodeGeneration
             conn.Open();
             var command = conn.CreateCommand();
             command.CommandText = query.SQL;
-            foreach (var p in query.Parameters.Parameter)
+            foreach (var p in query.Parameters)
             {
-                command.Parameters.AddWithValue(p.Name)
-
-
+                command.Parameters.AddWithValue(p.Name, DefaultValueFromType(p.CSType));
             }
             var reader = command.ExecuteReader();
-            var schemaTable = reader.GetSchemaTable();
+            var schemaTable = reader.GetColumnSchema();
+        }
+
+        private static object DefaultValueFromType(string csType)
+        {
+            if (csType == "int") return 1;
+            return null;
         }
 
         private static string GetClassName(string directory)

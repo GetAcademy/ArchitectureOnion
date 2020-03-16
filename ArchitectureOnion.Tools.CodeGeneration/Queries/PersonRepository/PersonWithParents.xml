@@ -1,7 +1,6 @@
 ﻿<Query>
   <Parameters>
     <Parameter Name="Id" CSType="int"/>
-    <Parameter Name="Name" CSType="string"/>
   </Parameters>
   <SQL>
     SELECT p.Id
